@@ -32,23 +32,28 @@
     }
 
     .container {
-        width: 1200px;  
-        display: inline-flex;  
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
+    .header-nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .logo { font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
-        color: var(--accent-color);        
-    }
-
-    .site-nav,
-    .list-force,
-    .list-force-item,
-    .mail-header,
-    .tel {
+        color: var(--accent-color);
         display: inline-block;
+        margin-top: 24px;
+        margin-bottom: 25px;
+        margin-right: 93px;
+        outline: 1px solid tomato;   
     }
 
     .accent-header {
@@ -61,11 +66,21 @@
 
     .list-force {
         list-style-type: none;
+        padding: 0;
+        
     }
+    .list-force > .list-force-item:not(:last-child) {
+        margin-right: 50px;
+    } 
 
     .list-force :hover,
     .list-force :focus {
         color: var(--accent-color);
+    }
+    .list-force-item {
+        display: inline-block;
+        padding: 0;
+        outline: 1px solid tomato;
     }
 
     .list-img {
@@ -76,7 +91,14 @@
         background-color: var(--pbg-color);
         font-weight: 500;
         line-height: 1.14;
-        letter-spacing: 0.02em;        
+        letter-spacing: 0.02em; 
+        outline: 1px solid tomato;       
+    }
+    .site-nav {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        outline: 1px solid tomato;
     }
 
     .site-nav .link {
@@ -86,6 +108,12 @@
     .site-nav .link:hover,
     .site-nav .link:focus {    
         color: var(--accent-color);
+    }
+    .address-header {
+        display: flex;
+        justify-content: end;
+        padding: 0;
+        outline: 1px solid tomato;
     }
 
     .mail-header {
@@ -108,6 +136,7 @@
         color: var(--tt-color);
         text-align: center;
         text-transform: uppercase;
+        margin-top: 0;
     }
     
     .button1 {
