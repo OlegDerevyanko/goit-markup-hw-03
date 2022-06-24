@@ -12,19 +12,19 @@
 </head>
 <body>
 	<header class="header">
-        <div class="container header-nav-list">
+        <div class="container header-nav">
             <nav class="site-nav">
                 <a href="./index.html" class="logo">Web<span class="accent-header">Studio</span></a>
                 <ul class="list-force">
-                    <li class="list-force-item"><a href="./index.html" class="link">Студия</a></li>
-                    <li class="list-force-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="list-force-item"><a href="" class="link">Контакты</a></li>
+                    <li class="item"><a href="./index.html" class="link">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
             <address class="address-header">
                 <ul class="list-force">
-                    <li class="list-force-item"><a href="mailto:info@devstudio.com" class="mail-header">info@devstudio.com</a></li>
-                    <li class="list-force-item"><a href="tel:+380961111111" class="tel">+38 096 111 11 11</a></li>
+                    <li class="item"><a href="mailto:info@devstudio.com" class="mail-header">info@devstudio.com</a></li>
+                    <li class="item"><a href="tel:+380961111111" class="tel">+38 096 111 11 11</a></li>
                 </ul>
             </address>
             
@@ -33,65 +33,75 @@
 
     </header>
 	<main>
-		<section class="section1">
-            <h1 class="h1">Эффективные решения <br> для вашего бизнеса</h1>
-            <button class="button1" type="button">Заказать услугу</button>
+		<section class="section1 section">
+           <div class="container">
+                 <h1 class="h1">Эффективные решения <br> для вашего бизнеса</h1>
+                 <button class="button1" type="button">Заказать услугу</button>
+
+           </div>
         </section>
-        <section class="section2">
-            <h2 hidden>Наши преимущества</h2>
-            <ul class="list">
-                <li>
+        <section class="section2 section">
+            <div class="container">
+                <h2 hidden>Наши преимущества</h2>
+            <ul class="list-adv">
+                <li class="item">
                     <h3 class="advantage">Внимание к деталям</h3>
                     <p class="description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="advantage">Пунктуальность</h3>
                     <p class="description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="advantage">Планирование</h3>
                     <p class="description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="item">
                     <h3 class="advantage">Современные технологии</h3>
                     <p class="description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
 
             </ul>
+            </div>
         </section>
-		<section class="section3">
+		<section class="section3 section">
             <!-- Чем мы занимаемся -->
             <h2 class="h2">Чем мы занимаемся</h2>
-            <ul class="list">
-                <li><img src="./images/photo.jpg" alt="Фото" width="370"></li>
-                <li><img src="./images/photo1.jpg" alt="Фото1" width="370"></li>
-                <li><img src="./images/photo2.jpg" alt="Фото2" width="370"></li>
-            </ul>
+            <div class="container">
+                <ul class="list-photo">
+                    <li class="item"><img src="./images/photo.jpg" alt="Фото" width="370"></li>
+                    <li class="item"><img src="./images/photo1.jpg" alt="Фото1" width="370"></li>
+                    <li class="item"><img src="./images/photo2.jpg" alt="Фото2" width="370"></li>
+                </ul>
+            </div>
         </section>
-		<section>
-			<h2 class="h2">Наша команда</h2>
-            <ul class="list">
-				<li>
+		<section class="section4 section">
+			<div class="container">
+                <h2 class="h2">Наша команда</h2>
+            <ul class="list-team">
+				<li class="photo">
 					<img src="./images/idemyanenko.jpg" alt="Игорь Демьяненко" width="270">                
 					<h3 class="h3-name">Игорь Демьяненко</h3>
                     <p class="prof">Product Designer</p> 
 				</li>
-				<li>
+				<li class="photo">
 					<img src="./images/orepina.jpg" alt="Ольга Репина" width="270">
 					<h3 class="h3-name">Ольга Репина</h3>
                     <p class="prof">Frontend Developer</p>
 				</li>
-				<li>
+				<li class="photo">
 					<img src="./images/ntarasov.jpg" alt="Николай Тарасов" width="270">
 					<h3 class="h3-name">Николай Тарасов</h3>
                     <p class="prof">Marketing</p>
 				</li>
-				<li>
+				<li class="photo">
 					<img src="./images/mermakov.jpg" alt="Михаил Ермаков" width="270">
 					<h3 class="h3-name">Михаил Ермаков</h3>
                     <p class="prof">UI Designer</p>
 				</li>
 			</ul>
+
+            </div>
 		</section>
 
 	</main>
