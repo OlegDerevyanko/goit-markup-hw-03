@@ -465,15 +465,15 @@
         line-height: 2;
         letter-spacing: 0.06em; 
         color: var(--st-color);
-        margin: 20px 24px 4px 24px;
+        padding: 20px 24px 4px 24px;
+        margin: 0;
     }    
     .description2 {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.88;
-        margin-left: 24px;
-        margin-bottom: 20px; 
-        margin-right: 24px; 
+        margin: 0; 
+        padding: 0 24px 20px 24px ;
         letter-spacing: 0.03em;
         color: var(--pt-color);  
     }
