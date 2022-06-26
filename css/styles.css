@@ -68,12 +68,13 @@
         justify-content: space-between;
         align-items: center;
     }
-    .logo { font-family: 'Raleway';
+    .logo { 
+        font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
         color: var(--accent-color);
-        display: flex;
+        /* display: flex; */
         padding-top: 24px;
         padding-bottom: 25px;
         margin-right: 93px;
@@ -98,9 +99,9 @@
         margin-right: 50px;
         padding: 0;
     }
-    .list-force .item:last-child {
+    /* .list-force .item:last-child {
         margin-right: 0;
-    }
+    } */
     .list-force .link,
     .mail-header, .tel {
         display: block;
@@ -145,6 +146,8 @@
 
     /* Section 1 */
     .section1 {
+        padding-top: 200px;
+        padding-bottom: 200px;
         background-color: var(--tbg-color);
     }
 
@@ -161,6 +164,8 @@
     }
     
     .button1 {
+        width: 200px;
+        height: 50px;
         font-family: 'Roboto';
         background-color: var(--accent-color);
         font-weight: 700;
@@ -223,7 +228,7 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 1.17;
-        color: var(--secondary-text-color);
+        color: var(--st-color);
         text-transform: uppercase;
     }
 
@@ -239,6 +244,7 @@
 
     .h2 {
         margin-top: 0;
+        margin-bottom: 50px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -279,7 +285,8 @@
     }
 
     .h3-name {
-        padding-top: 30px;
+        
+        
         padding-bottom: 10px;
         margin-bottom: 0;
         font-weight: 500;
@@ -306,13 +313,16 @@
     .list-team .photo:last-child {
         margin-right: 0;
     }
+    .name-job {
+        padding: 30px 0;
+    }
 
     .prof {
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
         margin-bottom: 0;
-        padding-bottom: 30px;
+        padding: 0;
     }
     /* Section 4 End */
     /* Footer */
@@ -320,7 +330,8 @@
     .footer {
         background-color: var(--tbg-color);
         padding: 0%;
-        padding-bottom: 60px;        
+        padding-bottom: 60px; 
+        padding-top: 60px;       
     }
 
     .footer-logo { 
@@ -330,7 +341,7 @@
         line-height: 1.19;
         color: var(--accent-color);
         display: inline-block;
-        padding-top: 60px;
+        
         margin-bottom: 20px;
     }
 
@@ -340,7 +351,8 @@
 
     .address {
         line-height: 1.71;
-        color: var(--tt-color);         
+        color: var(--tt-color); 
+                
     }
 
     .address:hover {
@@ -355,9 +367,15 @@
         margin: 0;
         padding-left:0;
     }
+    .footer-link {
+        margin-bottom: 9px;
+    }
+    .footer-link:last-child {
+        margin-bottom: 0;
+    }
 
     .mail-footer {
-        padding-top: 9px;
+       
         font-weight: 400;
         line-height: 1.71;
         color: var(--ft-color);
@@ -372,7 +390,7 @@
     }
 
     .tel-footer {
-        padding-top: 9px;
+        
         line-height: 1.71;
         color: var(--ft-color);
         text-decoration: none;
@@ -390,7 +408,26 @@
     /* Portfolio */
     
     
-    
+    .control {
+        padding-left: 0;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        text-align: center;
+        list-style-type: none;
+        color: var(--st-color);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
+    .control .item {
+        margin-right: 8px;
+    }
+    .item:last-child {
+        margin-right: 0;
+    } 
     .button2 {
         font-family: 'Roboto';
         background-color: var(--sbg-color);
@@ -404,7 +441,7 @@
         rgba(0, 0, 0, 0.08), 0px 2px 2px 
         rgba(0, 0, 0, 0.12);
         border-radius: 4px;
-        margin-bottom: 50px;        
+                
     }
     .button2:hover {
         background-color: var(--accent-color);
@@ -414,26 +451,7 @@
         background-color: var(--accent-color);
         color: var(--tt-color);
     }
-    .control {
-        padding-left: 0;
-        font-family: 'Roboto';
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.63;
-        text-align: center;
-        list-style-type: none;
-        color: var(--st-color);
-        display: flex;
-        justify-content: center;
-        padding-left: 0%;
-        margin: 0;
-    }
-    .control .item {
-        margin-right: 8px;
-    }
-    .item:last-child {
-        margin-right: 0;
-    }     
+        
     .gallery {
         padding-left: 0;
         display: flex;
@@ -454,6 +472,7 @@
         display: block;
     }
     .gallery .card { 
+        padding: 20px 24px;
         border: 1px solid var(--bbt-color); 
     }    
     .gallery .item:nth-child(3n) {
@@ -468,15 +487,14 @@
         line-height: 2;
         letter-spacing: 0.06em; 
         color: var(--st-color);
-        padding: 20px 24px 4px 24px;
         margin: 0;
+        margin-bottom: 4px;
     }    
     .description2 {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.88;
         margin: 0; 
-        padding: 0 24px 20px 24px ;
         letter-spacing: 0.03em;
         color: var(--pt-color);  
     }
