@@ -164,7 +164,7 @@
     }
     
     .button1 {
-        width: 200px;
+        min-width: 200px;
         height: 50px;
         font-family: 'Roboto';
         background-color: var(--accent-color);
@@ -329,7 +329,7 @@
 
     .footer {
         background-color: var(--tbg-color);
-        padding: 0%;
+        padding: 0;
         padding-bottom: 60px; 
         padding-top: 60px;       
     }
@@ -341,7 +341,6 @@
         line-height: 1.19;
         color: var(--accent-color);
         display: inline-block;
-        
         margin-bottom: 20px;
     }
 
@@ -350,6 +349,7 @@
     }
 
     .address {
+        margin-bottom: 0;
         line-height: 1.71;
         color: var(--tt-color); 
                 
@@ -375,7 +375,7 @@
     }
 
     .mail-footer {
-       
+        margin-bottom: 0;
         font-weight: 400;
         line-height: 1.71;
         color: var(--ft-color);
@@ -436,15 +436,15 @@
         line-height: 1.63;
         border: none;
         padding: 6px 22px;
-        box-shadow: 0px 3px 1px 
-        rgba(0, 0, 0, 0.1), 0px 1px 2px 
+        /* rgba(0, 0, 0, 0.1), 0px 1px 2px 
         rgba(0, 0, 0, 0.08), 0px 2px 2px 
-        rgba(0, 0, 0, 0.12);
+        rgba(0, 0, 0, 0.12); */
         border-radius: 4px;
                 
     }
     .button2:hover {
         background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
         color: var(--tt-color);
     }
     .button2:focus {
